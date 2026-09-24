@@ -73,7 +73,7 @@ Power Query was used to prepare the dataset for analysis and dashboarding.
 
 The respondent-level data was reshaped from **wide to long format**, making skill-level analysis and PivotTable-based counting more efficient. Queries were also merged to support the interactive dashboard.
 
-![Power Query steps](05_Images/datase_query.png)
+![Power Query steps](05_Images/dataset_query.png)
 
 ### 4. Analyse
 
