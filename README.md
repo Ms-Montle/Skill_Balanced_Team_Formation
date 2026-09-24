@@ -1,5 +1,5 @@
 # Skill_Balanced_Team_Formation
-A data-driven team formation project that analyzes skills and proficiency to create balanced teams and identify capability gaps.
+A data-driven project that treated datathon team formation as an analytical problem: could a structured process build more balanced teams than random assignment?
 
 ---
 
@@ -24,7 +24,7 @@ Because I was both the project owner and one of the respondents, fairness and po
 - **Exploratory Data Analysis** — PivotTables, PivotCharts, skill prevalence, proficiency depth, scarcity, and coverage analysis
 - **Excel analysis** — `IF`, `IFS`, `AVERAGE`, `SWITCH`, `COUNTIF`, `COUNTIFS`, and other formula-based calculations
 - **Dashboard design** — interactive Excel dashboards using slicers, data-validation controls, PivotTables, and formula-driven outputs
-- **Constraint-based grouping** — manual skill-based team formation within a fixed 2–5 member team-size requirement
+- **Manual, rule-guided team formation** — skill-based grouping within a fixed 2–5 member team-size constraint
 - **Bias safeguards** — explicit measures to reduce skill concentration and potential self-assignment bias
 - **Data storytelling** — translating analysis into team-specific findings and targeted recruitment recommendations
 - **Technical documentation** — documented methodology, EDA, verification, limitations, and recommendations
@@ -73,7 +73,7 @@ Power Query was used to prepare the dataset for analysis and dashboarding.
 
 The respondent-level data was reshaped from **wide to long format**, making skill-level analysis and PivotTable-based counting more efficient. Queries were also merged to support the interactive dashboard.
 
-![Power Query steps](05_Images/dataset query.png)
+![Power Query steps](05_Images/datase_query.png)
 
 ### 4. Analyse
 
@@ -209,13 +209,10 @@ Safeguards included:
 
 ## Limitations
 
-- **Small sample:** The analysis was based on 10 eligible respondents and was designed specifically for this respondent pool.
-- **Self-reported proficiency:** Skills and proficiency levels were based on respondent selections and were not independently assessed.
-- **Domain Knowledge wording:** The poll used specific examples when asking about Domain Knowledge, which may have influenced the zero-response result.
-- **Analytical reasoning:** General analytical reasoning was not directly captured as a separate survey skill.
-- **Scarcity vs. imbalance:** Some gaps could not be solved through redistribution because the relevant skill existed only once, or at insufficient proficiency levels, across the entire pool.
-- **Manual team formation:** The grouping approach was appropriate for a small respondent pool but would require a more formal optimisation or constraint-based method at larger scale.
-- **External recruitment:** The recommendations identify target capability profiles but do not verify whether suitable candidates were ultimately recruited.
+- **Small, self-reported sample:** Analysis covers 10 respondents; proficiency was self-reported, not independently assessed, and general analytical reasoning wasn't captured as its own skill.
+- **Coverage gaps:** Domain Knowledge's zero result may reflect poll wording rather than true absence; EDA and Data Manipulation stayed scarce because only one respondent held either, so no redistribution could fix it.
+- **Manual method:** Grouping suited this small pool but would need a more formal optimisation approach at larger scale.
+- **Unverified outcomes:** Recommendations name target capability profiles per team but don't confirm whether matching recruits were actually found.
 
 ---
 
